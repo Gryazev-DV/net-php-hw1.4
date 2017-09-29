@@ -1,13 +1,10 @@
 <?php
 
-if(!function_exists('mb_ucfirst'))
-{
  function mb_ucfirst($string, $enc = 'UTF-8')
  {
   return mb_strtoupper(mb_substr($string, 0, 1, $enc), $enc) . 
          mb_substr($string, 1, mb_strlen($string, $enc), $enc);
  }
-}
 
 $city_id = '535974'; //Leonovo
 $api_id = '019ccc35c782960112f8dbec67dcb24d';
